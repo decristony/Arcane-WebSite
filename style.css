@@ -1,0 +1,408 @@
+@font-face {
+  font-family: arcane;
+  src        : url('Font/ArcaneNine-eZP1x.ttf');
+}
+
+@font-face {
+  font-family: quadrata-bold;
+  src        : url('Font/Friz\ Quadrata\ Bold.otf');
+}
+
+@font-face {
+  font-family: quadrata-regular;
+  src        : url('Font/Friz\ Quadrata\ Regular.ttf');
+}
+
+@font-face {
+  font-family: quadrata-medium;
+  src        : url('Font/Friz\ Quadrata\ Std\ Medium.otf');
+}
+
+/* variaveis */
+:root {
+  --primary-font  : arcane;
+  --secondary-font: quadrata-regular;
+  --medium-font   : quadrata-medium;
+  --bold-font     : quadrata-bold;
+
+}
+
+.shadow {
+  box-shadow: inset 0 10px 20px 10px black;
+}
+
+body {
+  margin          : 0;
+  padding         : 0;
+  overflow        : hidden;
+  background-color: black;
+}
+
+header {
+  width   : 100vw;
+  height  : 10vh;
+  z-index : 1;
+  position: absolute;
+  left    : 0;
+  right   : 0;
+  top     : 0;
+  bottom  : 0;
+  padding : 15px 20px;
+}
+
+header h1,
+h2 {
+  font-family: var(--primary-font);
+  position   : relative;
+  width      : 50%;
+  align-items: center;
+  text-align : center;
+  margin     : auto;
+  opacity    : 1;
+  color      : #855E42;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h1,
+h2 {
+  color: #855E42;
+  text-shadow: -1px -1px 0px #FFF,
+    -1px 2px 0px #FFF,
+    2px -1px 0px #FFF,
+    2px 0px 0px #FFF;
+}
+
+* {}
+
+@media (min-aspect-ratio:16/9) {
+  .banner video {
+    width : 100%;
+    height: auto;
+  }
+}
+
+@media (min-aspect-ratio:16/9) {
+  .banner video {
+    width : auto;
+    height: 100%;
+  }
+}
+
+@media(max-width: 767px) {
+  .banner {
+    display: none;
+  }
+
+  .banner-mobile {
+    display: block;
+  }
+}
+
+section {
+
+  width     : 100vw;
+  min-height: 100%;
+  height    : 100vh;
+  overflow  : hidden;
+
+}
+
+.home {
+  width: 100%;
+
+}
+
+.banner {
+  z-index          : 1;
+  position         : absolute;
+  left             : 0;
+  right            : 0;
+  top              : 0;
+  bottom           : 0;
+  margin           : auto;
+  background-repeat: no-repeat;
+  -webkit-filter   : drop-shadow(15px 15px 5px rgb(0, 0, 0));
+  filter           : drop-shadow(5px 5px 5px rgb(0, 0, 0));
+}
+
+.banner img {
+  position   : relative;
+  width      : 50%;
+  align-items: center;
+  text-align : center;
+  opacity    : 1;
+  top        : 25vh;
+  left       : 25vw;
+  margin     : auto;
+}
+
+nav {
+  z-index : 1;
+  position: fixed;
+  top     : 25vh;
+}
+
+nav ul {
+  position       : fixed;
+  margin-left    : 3.3rem;
+  padding        : 1rem;
+  list-style-type: none;
+  justify-content: center;
+  text-align     : justify;
+  line-height    : 2.5rem;
+  z-index        : 20;
+
+
+
+}
+
+.home nav ul li a {
+
+  opacity    : 1;
+  font-family: var(--primary-font);
+  position   : relative;
+  display    : flex;
+  padding    : 5px;
+  cursor     : pointer;
+  font-size  : 1.2rem;
+  color      : white;
+  text-shadow: -1px -1px 0px #855E42,
+    -1px 2px 0px #855E42,
+    2px -1px 0px #855E42,
+    2px 0px 0px #855E42;
+  z-index        : 20;
+  text-decoration: none;
+}
+
+.home nav ul li a:hover {
+  font-size: 1.5rem;
+}
+
+.about {
+  width     : 100%;
+  background: blue;
+}
+
+.trailer {
+  width     : 100%;
+  background: green;
+}
+
+.galery {
+  width     : 100%;
+  background: pink
+}
+
+.episodes {
+  width     : 100%;
+  background: gray
+}
+
+#videoBG {
+  position: relative;
+  width   : 100vw;
+  height  : auto;
+  z-index : 0;
+  opacity : 1;
+
+}
+
+#videoZ {
+  position: absolute;
+  width   : 100vw;
+  height  : auto;
+  z-index : 0;
+  opacity : 1;
+}
+
+/* inicio about section */
+
+.box {
+  position  : relative;
+  display   : flex;
+  top       : 50%;
+  left      : 50%;
+  transform : translate(-50%, -50%);
+  width     : 600px;
+  height    : 300px;
+  background: #0c4b4252;
+  box-sizing: border-box;
+  overflow  : hidden;
+  box-shadow: 0 10px 50px #7e9868;
+  border    : 2px solid #68986a;
+  color     : white;
+  padding   : 20px;
+}
+
+@media (max-width:900px) {
+  .box {
+    width : 350px;
+    height: 400px;
+  }
+
+  .box h2 {
+    font-size: 1rem;
+  }
+
+  .box p {
+    font-size: .5rem;
+  }
+}
+
+
+.box:before {
+  content       : '';
+  position      : absolute;
+  top           : 0;
+  left          : -100%;
+  width         : 100%;
+  height        : 100%;
+  background    : rgba(255, 255, 255, 0.1);
+  transition    : 0.5s;
+  pointer-events: none;
+}
+
+.box:hover:before {
+  left     : 50%;
+  transform: skewX(-5deg);
+}
+
+
+.box .content {
+  position  : absolute;
+  top       : 15px;
+  left      : 15px;
+  right     : 15px;
+  bottom    : 15px;
+  border    : 1px solid #689882;
+  padding   : 20px;
+  text-align: center;
+  box-shadow: 0 5px 10px rgba(22, 100, 2, 0.979);
+
+}
+
+.box h2 {
+  text-shadow  : 2px 2px 0px #5A3E1E, -2px -2px 0px #404138;
+  color        : #EDB852;
+  font-size    : 1.5rem;
+  margin-bottom: 20px;
+  font-family  : var(--bold-font);
+}
+
+.box a {
+  font-size  : 1rem;
+  padding    : 10px 0px;
+  margin-top : 10px;
+  font-family: var(--secondary-font);
+  color      : #FFF;
+  z-index    : 20;
+}
+
+
+
+
+.box span {
+  position  : absolute;
+  top       : 0;
+  left      : 0;
+  width     : 100%;
+  height    : 100%;
+  display   : block;
+  box-sizing: border-box;
+
+}
+
+.box span:nth-child(1) {
+  transform: rotate(0deg);
+}
+
+
+.box span:nth-child(2) {
+  left     : 25.2%;
+  transform: rotate(90deg);
+}
+
+.box span:nth-child(3) {
+  transform: rotate(180deg);
+}
+
+.box span:nth-child(4) {
+  left     : -25.2%;
+  transform: rotate(270deg);
+}
+
+.box span:before {
+  content   : '';
+  position  : absolute;
+  width     : 100%;
+  height    : 2px;
+  background: #68986a;
+  animation : animate 8s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform       : scaleX(0);
+    transform-origin: left;
+  }
+
+  50% {
+    transform       : scaleX(1);
+    transform-origin: left;
+  }
+
+  50.1% {
+    transform       : scaleX(1);
+    transform-origin: right;
+
+  }
+
+  100% {
+    transform       : scaleX(0);
+    transform-origin: right;
+
+  }
+
+
+}
+
+/* fim about section */
+
+.background {
+  animation: slidein 5s .10s;
+}
+
+.background img {
+  position : absolute;
+  min-width: 100vw;
+  height   : auto;
+}
+
+@media (min-aspect-ratio:16/9) {
+  .background img {
+    width : 100%;
+    height: auto;
+  }
+}
+
+@media (min-aspect-ratio:16/9) {
+  .background img {
+    width : auto;
+    height: 100%;
+  }
+}
+
+/* @media(max-width: 767px) {
+  .background {
+    display: none;
+  }
+
+  .banner-mobile {
+    display: block;
+  }
+} */
+
+@keyframes slidein {}
