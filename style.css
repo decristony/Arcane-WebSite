@@ -228,10 +228,10 @@ nav ul {
   transform : translate(-50%, -50%);
   width     : 600px;
   height    : 300px;
-  background: #0c4b4252;
+  background: #23426b70;
   box-sizing: border-box;
   overflow  : hidden;
-  box-shadow: 0 10px 50px #7e9868;
+  box-shadow: 0 1px 40px #7e9868;
   border    : 2px solid #68986a;
   color     : white;
   padding   : 20px;
@@ -271,7 +271,7 @@ nav ul {
 }
 
 
-.box .content {
+.box .content1 {
   position  : absolute;
   top       : 15px;
   left      : 15px;
@@ -280,7 +280,7 @@ nav ul {
   border    : 1px solid #689882;
   padding   : 20px;
   text-align: center;
-  box-shadow: 0 5px 10px rgba(22, 100, 2, 0.979);
+
 
 }
 
@@ -406,3 +406,94 @@ nav ul {
 } */
 
 @keyframes slidein {}
+
+/* inicio section trailer */
+
+
+.content {
+  margin-top      : 9rem;
+  margin-left     : 6.5rem;
+  background-color: blue;
+  width           : 40rem;
+  height          : 22.5rem;
+  border-radius   : 20px;
+  position        : absolute;
+  overflow        : hidden;
+  left            : 50%;
+  transform       : translateX(-50%);
+  align-items     : center;
+  justify-content : center;
+
+}
+
+.slides {
+  display: flex;
+  width  : 300%;
+  height : 100%;
+
+}
+
+.slide {
+  width     : 33.3%;
+  transition: .6s;
+}
+
+.slide iframe {
+  width : 100%;
+  height: 100;
+}
+
+#slide1:checked~.s1 {
+  margin-left: 0;
+}
+
+#slide2:checked~.s1 {
+  margin-left: -33.3%;
+}
+
+#slide3:checked~.s1 {
+  margin-left: -66.6%;
+}
+
+.navigation {
+  display    : flex;
+  position   : absolute;
+  z-index    : 2000;
+  visibility : visible;
+  margin-top : 2rem;
+  margin-left: 6.5rem;
+  left       : 50%;
+  width      : 40rem;
+  transform  : translateX(-50%);
+
+
+}
+
+.bar {
+  font-family     : var(--primary-font);
+  color           : #EDB852;
+  text-align      : center;
+  padding         : .5rem;
+  width           : 6rem;
+  margin          : 60px;
+  border-radius   : 10px;
+  height          : 1.5rem;
+  border          : 2px solid #5A3E1E;
+  cursor          : pointer;
+  transition      : .4s;
+  background-color: #404138;
+}
+
+.bar:hover {
+  background-color: #fff;
+
+}
+
+input {
+  display: none;
+}
+
+/* 
+
+
+/* fim section trailer */
