@@ -7,6 +7,15 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="reset.css" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <!-- inicio pagina home -->
@@ -30,7 +39,7 @@
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#trailer">Trailer</a></li>
-          <li><a href="#caracters">Caracters</a></li>
+          <li><a href="#caracters">Personagens</a></li>
           <li><a href="#galery">Galery</a></li>
           <li><a href="#episodes">Episodes</a></li>
         </ul>
@@ -48,7 +57,7 @@
         <span></span>
         <span></span>
         <span></span>
-        <div class="content1 ">
+        <div class="content1">
           <h2>SINOPSE & INFO</h2>
           <p>
             <a
@@ -73,6 +82,7 @@
       <video id="videoZ" autoplay muted loop>
         <source src="wallpaper/trailer.mp4" />
       </video>
+      <h1>Trailers</h1>
       <div class="content">
         <div class="slides">
           <input type="radio" name="slide" id="slide1" checked />
@@ -130,6 +140,99 @@
       <div class="background">
         <img src="wallpaper/jinx-zaun.png" alt="arcane" />
       </div>
+
+      <h1>Personagens</h1>
+      <!-- inicio cards -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <h1>Powder</h1>
+            <p>
+              Sim, Powder é Jinx. Uma criminosa impulsiva e maníaca de Zaun,
+              Jinx vive para disseminar o caos sem se preocupar com as
+              consequências. Com um arsenal de armas mortais, ela detona as
+              explosões mais altas e mais luminosas para deixar um rastro de
+              destruição e pânico por onde passa. Jinx abomina o tédio e deixa
+              alegremente sua marca caótica de pandemônio aonde quer que vá.
+            </p>
+            <img src="wallpaper/caracters/Character_Jinx.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <h1>Violet</h1>
+            <p>
+              Antiga criminosa das ruas violentas de Zaun, Vi é uma mulher
+              temível, impulsiva e explosiva que tem muito pouco respeito por
+              autoridades. Após ter crescido completamente só, Vi desenvolveu
+              instintos de sobrevivência extremamente certeiros e um senso de
+              humor extremamente ácido. Agora trabalhando com os Vigias de
+              Piltover para manter a paz, ela porta poderosas manoplas hextec
+              capazes de esmagar paredes e suspeitos com a mesma facilidade.
+            </p>
+            <img src="wallpaper/caracters/Character_Vi.png" alt="" />
+          </div>
+
+          <div class="swiper-slide">
+            <h1>Vander</h1>
+            <p>
+              Vander é uma figura proeminente e popular na Subferia. Ele é o
+              proprietário do bar A Última Gota, um ponto de encontro para um
+              grupo da Subferia conhecido como As Vielas. Vander também parece
+              ser a razão pela qual Vi começar a utilizar boxe e socos como seu
+              estilo de luta. O próprio estilo de luta dele faz uso de punhos
+              poderosos e socos.
+            </p>
+            <img src="wallpaper/caracters/Character_Vander.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <h1>Silco</h1>
+            <p>
+              Silco Um poderoso senhor do crime e o principal antagonista da 1ª
+              temporada de Arcane. Um homem implacável e sedento de poder, ele
+              era um defensor fervoroso da independência de Zaun de Piltover e
+              estava disposto a fazer qualquer coisa para alcançá-lo.
+            </p>
+            <img src="wallpaper/caracters/Character_Silco.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <h1>Jayce</h1>
+            <p>
+              Jayce é um brilhante inventor que dedicou sua vida a defender
+              Piltover e sua implacável busca pelo progresso. Com seu martelo
+              hextech transformador em mãos, Jayce usa sua força, coragem e
+              considerável inteligência para proteger sua cidade natal. Embora
+              seja aclamado pela cidade como herói, ele não gosta muito da
+              atenção que o heroísmo traz. Mesmo assim, o coração de Jayce está
+              no lugar certo e até aqueles que invejam suas habilidades naturais
+              são gratos à forma como ele protege a Cidade do Progresso.
+            </p>
+            <img src="wallpaper/caracters/Character_Jayce.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <h1>Viktor</h1>
+            <p>
+              Viktor, o arauto de uma nova era de tecnologia, devotou sua vida
+              ao avanço da humanidade. Um idealista que busca elevar o povo de
+              Zaun a um novo nível de compreensão, ele acredita que somente ao
+              aceitar a evolução gloriosa da tecnologia será possível que a
+              humanidade alcance seu verdadeiro potencial. Com um corpo
+              melhorado por aço e ciência, Viktor é zeloso na sua busca por este
+              brilhante futuro.
+            </p>
+            <img src="wallpaper/caracters/Character_Viktor.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <h1>Mel</h1>
+            <p>
+              Mel Medarda é uma influente integrante do Conselho, especialista
+              em manipular situações para garantir o que deseja. De acordo com o
+              enredo da série, a personagem cultiva um plano secreto, e muitos
+              fãs acreditam que esse esquema tem a ver com Noxus.
+            </p>
+            <img src="wallpaper/caracters/Character_Mel.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <!-- Fim  cards -->
     </section>
     <!-- fim caracters -->
 
@@ -137,6 +240,116 @@
     <section class="galery" id="galery">
       <div class="background">
         <img src="wallpaper/galery.jpg" alt="arcane" />
+      </div>
+
+      <h1>Galeria</h1>
+
+      <div class="gallery" id="gallery">
+        <div class="gallery-item">
+          <div class="content2">
+            <img src="wallpaper/galery/img.jpg" alt="" />
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="content2">
+            <img src="wallpaper/galery/img1.jpg" alt="" />
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="content2">
+            <img src="wallpaper/galery/img2.jpg" alt="" />
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="content2">
+            <img src="wallpaper/galery/img3.jpg" alt="" />
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="content2">
+            <img src="wallpaper/galery/img4.jpg" alt="" />
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="content2">
+            <img src="wallpaper/galery/img5.jpg" alt="" />
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="content2">
+            <img src="wallpaper/galery/img6.jpg" alt="" />
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="content2">
+            <img src="wallpaper/galery/img7.jpg" alt="" />
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="content2">
+            <img src="wallpaper/galery/img8.jpg" alt="" />
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="content2">
+            <img src="wallpaper/galery/img9.jpg" alt="" />
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="content2">
+            <img src="wallpaper/galery/img10.jpg" alt="" />
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="content2">
+            <img src="wallpaper/galery/img11.jpg" alt="" />
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="content2">
+            <img src="wallpaper/galery/img12.jpg" alt="" />
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="content2">
+            <img src="wallpaper/galery/img13.jpg" alt="" />
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="content2">
+            <img src="wallpaper/galery/img14.jpg" alt="" />
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="content2">
+            <img src="wallpaper/galery/img15.jpg" alt="" />
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="content2">
+            <img src="wallpaper/galery/img16.jpg" alt="" />
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="content2">
+            <img src="wallpaper/galery/img17.jpg" alt="" />
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="content2">
+            <img src="wallpaper/galery/img18.jpg" alt="" />
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="content2">
+            <img src="wallpaper/galery/img19.jpg" alt="" />
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="content2">
+            <img src="wallpaper/galery/img20.jpg" alt="" />
+          </div>
+        </div>
       </div>
     </section>
     <!-- fim galery -->
@@ -147,5 +360,8 @@
         <img src="wallpaper/heimer.png" alt="arcane" />
       </div>
     </section>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script src="app.js"></script>
   </body>
 </html>
