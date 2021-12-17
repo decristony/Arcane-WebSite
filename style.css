@@ -165,9 +165,6 @@ nav ul {
   text-align     : justify;
   line-height    : 2.5rem;
   z-index        : 20;
-
-
-
 }
 
 .home nav ul li a {
@@ -693,9 +690,8 @@ input {
   transform : translate3d(0, 0, 0);
   animation : zoomin 1s ease;
   max-width : 100%;
-  max-height: 100vh;
+  max-height: 90vh;
   margin    : auto;
-  z-index   : 200;
 }
 
 .byebye {
@@ -707,6 +703,7 @@ input {
 }
 
 .gallery {
+
   display              : grid;
   grid-column-gap      : 8px;
   grid-row-gap         : 8px;
@@ -734,7 +731,6 @@ input {
   transition: transform 300ms ease;
   transition: all 0.5s ease;
   cursor    : pointer;
-  z-index   : 4;
 }
 
 .gallery .gallery-item:hover {
